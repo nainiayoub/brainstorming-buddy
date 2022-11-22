@@ -2,6 +2,7 @@ import streamlit as st
 import openai
 from datetime import datetime
 from streamlit.components.v1 import html
+import webbrowser
 
 st.set_page_config(page_title="Brainstorming Buddy")
 
@@ -15,11 +16,6 @@ html_temp = """
 button = """
 <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="nainiayoub" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
 """
-
-
-st.markdown("""
-# Brainstorming Buddy
-""")
 
 
 with st.sidebar:
@@ -42,7 +38,23 @@ with st.sidebar:
     unsafe_allow_html=True,
     )
 
-input_text = st.text_input("Brainstorm ideas for", disabled=False)
+
+input_text = None
+if 'output' not in st.session_state:
+    st.session_state['output'] = 0
+
+if st.session_state['output'] <=2:
+    st.markdown("""
+    # Brainstorming Buddy
+    """)
+    input_text = st.text_input("Brainstorm ideas for", disabled=False)
+    st.session_state['output'] = st.session_state['output'] + 1
+else:
+    # input_text = st.text_input("Brainstorm ideas for", disabled=True)
+    st.info("💡Thank you! You can help support sustaining the Brainstorming Buddy through [buy me a coffee](https://www.buymeacoffee.com/nainiayoub).  🔁🔁🔁 Refresh for more brainstorming!")
+    url = "https://twitter.com/intent/tweet?text=I%20just%20used%20the%20Brainstorming%20Buddy%20streamlit%20helper%20tool%20by%20@nainia_ayoub!%0A%0Ahttps://brainstorming-buddy.streamlit.app/"
+    if st.button('Tweet about this!'):
+        webbrowser.open_new_tab(url)
 
 hide="""
 <style>
