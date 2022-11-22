@@ -2,7 +2,6 @@ import streamlit as st
 import openai
 from datetime import datetime
 from streamlit.components.v1 import html
-import webbrowser
 
 st.set_page_config(page_title="Brainstorming Buddy")
 
@@ -52,9 +51,38 @@ if st.session_state['output'] <=2:
 else:
     # input_text = st.text_input("Brainstorm ideas for", disabled=True)
     st.info("💡Thank you! You can help support sustaining the Brainstorming Buddy through [buy me a coffee](https://www.buymeacoffee.com/nainiayoub).  🔁🔁🔁 Refresh for more brainstorming!")
-    url = "https://twitter.com/intent/tweet?text=I%20just%20used%20the%20Brainstorming%20Buddy%20streamlit%20helper%20tool%20by%20@nainia_ayoub!%0A%0Ahttps://brainstorming-buddy.streamlit.app/"
-    if st.button('Tweet about this!'):
-        webbrowser.open_new_tab(url)
+    st.markdown('''
+    <a target="_blank" style="color: black" href="https://twitter.com/intent/tweet?text=I%20just%20used%20the%20Brainstorming%20Buddy%20streamlit%20helper%20tool%20by%20@nainia_ayoub!%0A%0Ahttps://brainstorming-buddy.streamlit.app/">
+        <button class="btn">
+            Tweet about this!
+        </button>
+    </a>
+    <style>
+    .btn{
+        display: inline-flex;
+        -moz-box-align: center;
+        align-items: center;
+        -moz-box-pack: center;
+        justify-content: center;
+        font-weight: 400;
+        padding: 0.25rem 0.75rem;
+        border-radius: 0.25rem;
+        margin: 0px;
+        line-height: 1.6;
+        color: #fff;
+        background-color: #00acee;
+        width: auto;
+        user-select: none;
+        border: 1px solid #00acee;
+        }
+    .btn:hover{
+        color: #00acee;
+        background-color: #fff;
+    }
+    </style>
+    ''',
+    unsafe_allow_html=True
+    )
 
 hide="""
 <style>
