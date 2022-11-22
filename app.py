@@ -30,7 +30,7 @@ with st.sidebar:
     """)
     st.markdown(html_temp.format("rgba(55, 53, 47, 0.16)"),unsafe_allow_html=True)
     st.markdown("""
-    You can help sustain the project.<br/>
+    You can help support the project<br/>
     Find me at: [Twitter](https://twitter.com/nainia_ayoub) | [LinkedIn](https://www.linkedin.com/in/ayoub-nainia/?locale=en_US) | [GitHub](https://github.com/nainiayoub) 
     
     """,
