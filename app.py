@@ -50,6 +50,9 @@ footer{
 	visibility: hidden;
     position: relative;
 }
+.viewerBadge_link__1S137{
+    visibility: hidden;
+}
 <style>
 """
 st.markdown(hide, unsafe_allow_html=True)
