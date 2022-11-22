@@ -1,5 +1,5 @@
 # Brainstorming Buddy
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]()
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://brainstorming-buddy.streamlit.app/)
 ![visitor badge](https://visitor-badge.glitch.me/badge?page_id=nainiayoub.brainstorming-buddy)
 ![starts badge](https://img.shields.io/github/stars/nainiayoub/brainstorming-buddy)
 
