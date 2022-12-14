@@ -48,7 +48,7 @@ if st.session_state['output'] <=2:
     st.session_state['output'] = st.session_state['output'] + 1
 else:
     # input_text = st.text_input("Brainstorm ideas for", disabled=True)
-    st.info("💡Thank you! You can help support sustaining the Brainstorming Buddy through [buy me a coffee](https://www.buymeacoffee.com/nainiayoub).  🔁🔁🔁 Refresh for more brainstorming!")
+    st.info("💡Thank you! Refresh for more brainstorming!")
     st.markdown('''
     <a target="_blank" style="color: black" href="https://twitter.com/intent/tweet?text=I%20just%20used%20the%20Brainstorming%20Buddy%20streamlit%20helper%20tool%20by%20@nainia_ayoub!%0A%0Ahttps://brainstorming-buddy.streamlit.app/">
         <button class="btn">
