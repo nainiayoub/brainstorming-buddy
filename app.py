@@ -44,7 +44,7 @@ if st.session_state['output'] <=2:
     st.markdown("""
     # Brainstorming Buddy
     """)
-    input_text = st.text_input("Brainstorm ideas for", disabled=False)
+    input_text = st.text_input("Brainstorm ideas for", disabled=False, placeholder="What's on your mind?")
     st.session_state['output'] = st.session_state['output'] + 1
 else:
     # input_text = st.text_input("Brainstorm ideas for", disabled=True)
@@ -90,6 +90,9 @@ footer{
 }
 .viewerBadge_container__1QSob{
     visibility: hidden;
+}
+#MainMenu{
+	visibility: hidden;
 }
 <style>
 """
