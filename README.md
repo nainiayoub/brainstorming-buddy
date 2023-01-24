@@ -1,6 +1,7 @@
 # Brainstorming Buddy
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://brainstorming-buddy.streamlit.app/)
 ![visitor badge](https://visitor-badge.glitch.me/badge?page_id=nainiayoub.brainstorming-buddy)
+![forks badge](https://img.shields.io/github/forks/nainiayoub/brainstorming-buddy)
 ![starts badge](https://img.shields.io/github/stars/nainiayoub/brainstorming-buddy)
 
 Brainstorming Buddy is a small streamlit helper tool that I built on GPT-3 to help me generate ideas and identify points to expand on, giving a specific topic.
