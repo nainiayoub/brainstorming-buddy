@@ -2,7 +2,7 @@ import streamlit as st
 import openai
 from datetime import datetime
 from streamlit.components.v1 import html
-import pandas
+import pandas as pd
 import csv
 st.set_page_config(page_title="Brainstorming Buddy")
 
