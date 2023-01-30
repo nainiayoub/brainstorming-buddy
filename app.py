@@ -2,7 +2,8 @@ import streamlit as st
 import openai
 from datetime import datetime
 from streamlit.components.v1 import html
-
+import pandas
+import csv
 st.set_page_config(page_title="Brainstorming Buddy")
 
 
@@ -126,6 +127,14 @@ if input_text:
             data=topic,
             file_name=filename
         )
+        fields = [input_text, brainstorming_output, str(today)]
+        # read local csv file
+        r = pd.read_csv('./data/prompts.csv')
+        if len(fields)!=0:
+            with open('./data/prompts.csv', 'a', encoding='utf-8', newline='') as f:
+                # write to csv file (append mode)
+                writer = csv.writer(f, delimiter=',', lineterminator='\n')
+                writer.writerow(fields)
 
         
         
