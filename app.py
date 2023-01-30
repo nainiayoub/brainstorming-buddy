@@ -31,9 +31,7 @@ with st.sidebar:
     """)
     st.markdown(html_temp.format("rgba(55, 53, 47, 0.16)"),unsafe_allow_html=True)
     st.markdown("""
-    You can help support the project<br/>
-    Find me at: [Twitter](https://twitter.com/nainia_ayoub) | [LinkedIn](https://www.linkedin.com/in/ayoub-nainia/?locale=en_US) | [GitHub](https://github.com/nainiayoub) 
-    
+    Made by [@nainia_ayoub](https://twitter.com/nainia_ayoub)
     """,
     unsafe_allow_html=True,
     )
@@ -47,11 +45,11 @@ if st.session_state['output'] <=2:
     st.markdown("""
     # Brainstorming Buddy
     """)
-    input_text = st.text_input("Brainstorm ideas for", disabled=False)
+    input_text = st.text_input("Brainstorm ideas for", disabled=False, placeholder="What's on your mind?")
     st.session_state['output'] = st.session_state['output'] + 1
 else:
     # input_text = st.text_input("Brainstorm ideas for", disabled=True)
-    st.info("💡Thank you! You can help support sustaining the Brainstorming Buddy through [buy me a coffee](https://www.buymeacoffee.com/nainiayoub).  🔁🔁🔁 Refresh for more brainstorming!")
+    st.info("Thank you! Refresh for more brainstorming💡")
     st.markdown('''
     <a target="_blank" style="color: black" href="https://twitter.com/intent/tweet?text=I%20just%20used%20the%20Brainstorming%20Buddy%20streamlit%20helper%20tool%20by%20@nainia_ayoub!%0A%0Ahttps://brainstorming-buddy.streamlit.app/">
         <button class="btn">
@@ -93,6 +91,9 @@ footer{
 }
 .viewerBadge_container__1QSob{
     visibility: hidden;
+}
+#MainMenu{
+	visibility: hidden;
 }
 <style>
 """
