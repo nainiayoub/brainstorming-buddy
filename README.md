@@ -6,7 +6,7 @@
 
 Brainstorming Buddy is a small streamlit helper tool that I built on GPT-3 to help me generate ideas and identify points to expand on, giving a specific topic.
 
-_Featured on [Streamlit gallery](https://streamlit.io/gallery?category=nlp-language) for NLP & Language._
+_Featured on [Streamlit gallery](https://streamlit.io/gallery?category=nlp-language) for NLP & Language :balloon:_
 
 
 ## How does it work?
