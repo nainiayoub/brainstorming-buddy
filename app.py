@@ -99,19 +99,19 @@ footer{
 """
 st.markdown(hide, unsafe_allow_html=True)
 
-html(button, height=70, width=220)
-st.markdown(
-    """
-    <style>
-        iframe[width="220"] {
-            position: fixed;
-            bottom: 60px;
-            right: 40px;
-        }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
+# html(button, height=70, width=220)
+# st.markdown(
+#     """
+#     <style>
+#         iframe[width="220"] {
+#             position: fixed;
+#             bottom: 60px;
+#             right: 40px;
+#         }
+#     </style>
+#     """,
+#     unsafe_allow_html=True,
+# )
 if input_text:
     prompt = "Brainstorm ideas for "+str(input_text)
     if prompt:
